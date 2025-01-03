@@ -1,0 +1,451 @@
+/* Resetting margin and padding globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0077ff; /* Blue background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Menu Button */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #0056b3; /* Darker blue background */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%; /* Ensure it stretches full width */
+    z-index: 1;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+  
+}
+
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Home Section Styling */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  background-color: #0077ff;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff7f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #e67300;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* About Section Styling */
+.about-container {
+  position:relative;
+  top: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  background-color: #f4f4f4;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0077ff;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 40%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+  flex: 2;
+  max-width: 55%;
+  padding-left: 3rem;
+}
+
+.about-description p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-description {
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    justify-content: start;
+  }
+
+  .about-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-heading {
+    font-size: 1.50rem;
+  }
+}
+
+
+
+/* ProjectAndContact */
+/* ProjectAndContact.css */
+
+
+/* General Styles */
+.container {
+  padding: 1.5rem;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-title p {
+  color: #4b5563; /* Gray-600 */
+}
+
+/* Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.project-card img {
+  width: 100%;
+  height: 12rem;
+  /* object-fit: cover; */
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #4b5563; /* Gray-600 */
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db; /* Gray-300 */
+  border-radius: 0.375rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem; /* Adds gap between fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3b82f6; /* Blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Blue-500 */
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background-color: #3b82f6; /* Blue-500 */
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #2563eb; /* Blue-600 */
+}
+
+
+/* FOOTER CSS STYLE */
+/* Footer.css */
+
+/* Footer Container */
+.footer-container {
+  background-color: #1f2937; /* Gray-800 */
+  color: #ffffff; /* White */
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.875rem; /* Text-sm */
+}
+
+/* Footer Navigation */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav a {
+  color: #9ca3af; /* Gray-400 */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: #ffffff; /* White */
+}
+
+/* Social Links */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  color: #9ca3af; /* Gray-400 */
+  font-size: 1.5rem; /* Large icons */
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #3b82f6; /* Blue-500 */
+}
+
+/* Footer Credits */
+.footer-credits {
+  color: #9ca3af; /* Gray-400 */
+}
+
+.footer-credits a {
+  color: #3b82f6; /* Blue-500 */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-credits a:hover {
+  text-decoration: underline;
+}
